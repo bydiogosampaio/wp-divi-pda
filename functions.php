@@ -24,7 +24,7 @@ add_action( 'wp_head', 'divi_child_enqueue_styles' );
 // Insere um link para fazer o download da página no formato PDF
 function add_pdf_download_link($content){
     if( is_page() && is_main_query() ) {
-        $new_content = '<a href="#" class="download_as_pdf">Baixar como PDF</a>';
+        $new_content = '<a href="#" class="download_as_pdf"><img src="' . get_stylesheet_directory_uri() .'/assets/img/pdf-icon.png">Baixar como PDF</a>';
         $content .= $new_content;   
     }   
     return $content;

@@ -22,7 +22,7 @@ jQuery(document).ready(function ($) {
 	'</div>');
 	$('body').prepend(modal.append(carregando));
 
-    $('.download_as_pdf').on('click', function (e) {
+    $('body').on('click', '.download_as_pdf', function (e) {
         e.preventDefault();
         $('#modal').fadeIn('fast', function(){
 	        var docDefinition = {},
@@ -231,6 +231,12 @@ jQuery(document).ready(function ($) {
 	        pdfMake.createPdf(docDefinition).download(pdaJSObj.post_name + '.pdf');
 	        $('#modal').fadeOut('fast');
         });
-    })
+    });
+
+	if( $('.download_as_pdf').length ){
+		var clone = $('.download_as_pdf').clone();
+		console.log(clone);
+		$('#main-content .page').prepend(clone.addClass('download_as_pdf--header'));
+	}
 
 });

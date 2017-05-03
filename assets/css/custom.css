@@ -1308,3 +1308,21 @@ Animação - carregando
     75% { transform: translateX(7.5rem) scale(0.5); }
     95% { transform: translateX(0rem) scale(1); }
 }
+
+.download_as_pdf{
+    display: inline-block;
+    line-height: 47px;
+    float: right;
+}
+.download_as_pdf img{
+    height: 28px;
+    margin: 10px 10px 10px 0;
+}
+
+.download_as_pdf--header{
+    margin-top: 35px;
+}
+
+.entry-title{
+    display: none;
+}
