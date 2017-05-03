@@ -752,7 +752,9 @@ input.searchField {
 }
 
 /* Rodapé Fonte do Titulo */
-
+#main-footer{
+    display: none;
+}
 #main-footer .footer-widget h4 {
     color: #FFFFFF;
     font-size: 22px;
@@ -1225,7 +1227,7 @@ pre:hover {
 }
 
 .markdown-body table {
-    display: block;
+    display: table;
     width: 100%;
     overflow: auto;
 }
