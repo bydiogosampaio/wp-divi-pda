@@ -95,7 +95,11 @@
         </div>
 
     </div>
-
+    <?php
+        if( has_nav_menu('primary-menu') ){
+            wp_nav_menu( array( 'theme_location' => 'primary-menu' ) );
+        }
+    ?>
 </div>
 
 <div id="et-main-area">
